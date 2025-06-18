@@ -1,0 +1,60 @@
+main {
+  width: 850px;
+  margin: 0 auto;
+}
+main form {
+  padding: 30px 20px;
+}
+main form legend {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 5% !important;
+  font-size: 2rem !important;
+  font-weight: bold;
+  border-bottom: 2px solid var(--s_color_bk);
+}
+main form p {
+  margin-top: 17px;
+}
+main form p label {
+  width: 125px;
+}
+main form p input[type=text] {
+  width: 70%;
+  padding: 10px 13px;
+  border: 1px solid var(--s_color_g2);
+  border-radius: 5px;
+  text-indent: 5px;
+}
+main form p #p_code {
+  width: 80%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+main form p #s_airline {
+  width: 30%;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+main form .arrive {
+  margin-top: 17px;
+}
+main form .arrive p #s_dep_time1, main form .arrive p #s_dep_time2, main form .arrive p #s_des_time1, main form .arrive p #s_des_time2 {
+  width: 35%;
+  height: 50px;
+}
+main form .arrive p #s_dep_time1_h, main form .arrive p #s_dep_time2_h, main form .arrive p #s_des_time1_h, main form .arrive p #s_des_time2_h, main form .arrive p #s_dep_time1_m, main form .arrive p #s_dep_time2_m, main form .arrive p #s_des_time1_m, main form .arrive p #s_des_time2_m {
+  width: 10%;
+  height: 50px;
+}
+main form .arrive p #s_dep_code, main form .arrive p #s_des_code {
+  margin-top: 10px;
+  width: 10%;
+  height: 50px;
+}
+main form .arrive p #s_meeting {
+  margin-top: 17px;
+}
+main form .arrive p #s_price_child, main form .arrive p #s_price_baby {
+  margin-top: 17px;
+}/*# sourceMappingURL=schedule_edit_admin.css.map */

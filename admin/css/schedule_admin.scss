@@ -1,0 +1,36 @@
+@charset "utf-8";
+main {
+    width: 850px; margin: 0 auto;
+    form {
+        padding: 30px 20px;
+        legend {
+            text-align: center; margin-bottom: 5% !important; font-size: 2rem !important; font-weight: bold;
+        }
+        .contant_box {
+            table {width: 100%;
+                tr {
+                    th {line-height: 70px;
+                        label {width: 125px;}
+                    }
+                    .code {line-height: 40px;}
+                    td {
+                        input[type=text] {width: 70%; padding: 5px 8px; border: 1px solid var(--s_color_g2); border-radius: 5px; text-indent: 5px;}
+                        #p_code {width: 80%; margin-right: 10px; margin-bottom: 10px;}
+                        .btn_codecheck {background-color: var(--m_color2); color: #fff; padding: 5px 15px; border-radius: 5px;}
+                        #s_airline {margin-top: 17px;}
+                        #s_dep_time1, #s_dep_time2, #s_des_time1, #s_des_time2 {width: 55%;}
+                        #s_dep_time1_h, #s_dep_time2_h, #s_des_time1_h, #s_des_time2_h, #s_dep_time1_m, #s_dep_time2_m, #s_des_time1_m, #s_des_time2_m {width: 10%;}
+                        #s_dep_code, #s_des_code {margin-top: 10px};
+                        #s_meeting {margin-top: 17px;}
+                        #s_price_adult, #s_price_child, #s_price_baby {width: 70%;}
+                        #s_price_child, #s_price_baby {margin-top: 17px;}
+                    }
+                }
+            }
+            .submit {width: 35%; margin: 0 auto;
+                input[type=submit] {margin-right: 10px;}
+                a {color: #fff !important; padding: 5px 40px;}
+            }
+        }
+    }
+}

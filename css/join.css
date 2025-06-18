@@ -1,0 +1,338 @@
+@charset "utf-8";
+main{
+  padding-top:30px;
+  padding-bottom:100px;
+}
+.form_head h2{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.form_head p{
+  margin:40px 0px;
+  text-align: center;
+}
+.form, .form2,.agree, .confirm_box{
+  width: 900px;
+  margin:30px auto;
+}
+.form input::placeholder{color: #fff;}
+
+.form input[type="text"], .form input[type="email"], .form input[type="password"]{
+  width: 370px;
+  display: block;
+  height: 38px;
+  margin: 0;
+  padding: 0 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.form .id_form{
+  display:flex;
+}
+.form .btn_idcheck{
+  display: block;
+  width: 80px; line-height: 38px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background: #ddd;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.form .btn_idcheck:hover{
+  background: #ccc;
+}
+.form #id_check, .form #pw_check{
+  margin: 6px 10px;
+}
+.form th label,.form th span{
+  color: var(--s_color_w) !important;
+}
+.form td label{
+  margin: 0px 10px;
+}
+.form table, .agree dl{
+  width: 100%;
+  border-top:3px solid #333;
+}
+.form th{
+  width: 200px;
+  padding: 16px 20px 15px 30px;
+  height: 58px;
+  background: var(--s_color_b1);
+  border-bottom: 1px solid #333;
+}
+.form td{
+  padding: 8px 14px !important;
+  height: auto;
+  border-bottom: 1px solid #333;
+}
+.required {
+  display: inline-block;
+  position: relative;
+  left: -14px;
+  top: -3px;
+  font-weight: 700;
+  font-size: 15px;
+  width: 0;
+}
+.agree input{
+  margin: 5px 5px 0px 5px;
+  width: 15px; height: 15px;
+}
+.agree label{
+  line-height: 30px;
+}
+.agree dt, .agree dd{
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+  line-height: 50px;  
+}
+.agree dt:first-child{
+  background: var(--s_color_b1);
+  color: var(--s_color_w)
+}
+.agree dd{
+  display: none;
+}
+
+.confirm_box{
+  text-align: center;
+}
+
+.confirm_box .btn_cancel, .confirm_box .btn_submit{
+  width: 280px; height: 50px;
+  margin: 0 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.confirm_box .btn_cancel{
+  border: 1px solid #eee; background: #fff;
+}
+.confirm_box .btn_submit{
+  border: 1px solid var(--m_color);
+  background: var(--m_color);
+  color: var(--s_color_w);
+}
+
+.btn_cancel:hover{
+  border: 1px solid var(--s_color_m); color: var(--s_color_b1);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  main {
+    padding: 25px;
+  }
+
+  .form_head h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .form_head p {
+    font-size: 16px;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .form, .agree, .confirm_box {
+    width: 95%;
+    margin: 20px auto;
+    box-sizing: border-box;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="password"] {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .form .id_form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .form .btn_idcheck {
+    width: 100px;
+    line-height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: var(--m_color);
+    color: #fff;
+    border: none;
+  }
+
+  .form table {
+    width: 100%;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    border-collapse: collapse;
+  }
+
+  .form th {
+    width: 180px;
+    padding: 16px 20px;
+    height: 58px;
+    background-color: var(--s_color_b1);
+    border-bottom: 1px solid #333;
+    color: var(--s_color_w);
+    font-size: 15px;
+  }
+
+  .form td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #333;
+  }
+
+  .agree dl {
+    border-top: 2px solid #333;
+  }
+
+  .agree dt {
+    background-color: var(--s_color_b1);
+    color: var(--s_color_w);
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  .agree dd {
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+    display: none;
+  }
+
+  .confirm_box {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .confirm_box .btn_submit,
+  .confirm_box .btn_cancel {
+    width: 260px;
+    height: 50px;
+    font-size: 18px;
+    margin: 0 15px;
+    border-radius: 10px;
+  }
+
+  .btn_cancel {
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+  }
+
+  .btn_submit {
+    background-color: var(--m_color);
+    border: 1px solid var(--m_color);
+    color: var(--s_color_w);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    padding: 20px;
+  }
+  .form {
+    width: 100%;
+  }
+  .form_head {
+    padding-top: 80px;
+  }
+  
+  .form_head h2{
+    font-size: 20px;
+  }
+  .form_head p{
+    font-size: 14px;
+    text-align: center;
+  }
+  .form table {
+    width: 100% !important;
+    border-collapse: collapse;
+  }
+  .form input::placeholder {
+    color: #8b8b8b;
+    font-size: 10px;
+  }
+
+  .form table tr {
+    display: block;
+  }
+  .form th label{
+    font-size: 14px;
+  }
+  
+  .form table th,
+  .form table td {
+    display: block;
+    width: 100% !important;
+  }
+  .form table th{
+    background-color: #fff;
+  }
+
+  .form th label,.form th span{
+    color: var(--s_color_bk) !important;
+  }
+  
+
+  .form table td input[type="text"],
+  .form table td input[type="password"],
+  .form table td input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .id_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn_idcheck {
+    display: block;
+    width: 60px; line-height: 20px !important;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #fff;
+    border-radius: 5px !important;
+    background: var(--m_color)!important;
+    margin-top: 8px; margin-left: 0px !important;
+    font-size: 12px;
+    
+  }
+  #id_check{font-size: 12px;}
+  #id_check_btn{width: 50px;}
+
+  .agree dt,
+  .agree dd, 
+  .agree dl{
+    display: none;
+    border-bottom: none !important;
+  }
+  
+  .confirm_box {
+    width: 100%;
+    margin: 20px 0px;
+    font-size: 16px;
+
+  }
+  .btn_cancel{display: none;}
+  .confirm_box .btn_submit{
+    width: 50%;
+    height: 35px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,135 @@
+@charset "utf-8";
+main{
+  padding-top:30px;
+}
+.form_head h2{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.form_head p{
+  margin:30px 0px;
+  text-align: center;
+}
+.form{
+  width: 900px;
+  margin:20px auto;
+}
+
+.form th label{
+  color: var(--s_color_w) !important;
+}
+.form td label{
+  margin: 0px 10px;
+}
+.form table{
+  width: 100%;
+  border-top:2px solid #333;
+  border-bottom:2px solid #333;
+}
+.form th{
+  width: 200px;
+  padding: 16px 20px 15px 30px;
+  height: 58px;
+  background: var(--s_color_b1);
+  border-bottom: 1px solid #333;
+}
+.form td{
+  padding: 8px 14px !important;
+  height: auto;
+  border-bottom: 1px solid #333;
+}
+.btn_submit{
+  display: block;
+  margin: 100px auto;
+  width: 250px;
+  height: 50px;
+  background-color: var(--s_color_b1);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  main {
+    padding-top: 30px;
+  }
+
+  .form {
+    width: 95%;
+    padding: 0 30px;
+  }
+
+  .form th label {
+    color: var(--s_color_w) !important;
+  }
+
+  .form td label {
+    margin: 0 15px;
+  }
+
+  .form table {
+    margin: 0 auto;
+    width: 90%;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+  }
+
+  .form th {
+    width: 170px;
+    padding: 18px 25px 16px 35px;
+    height: 60px;
+    background: var(--s_color_b1);
+    border-bottom: 1px solid #333;
+  }
+
+  .btn_submit {
+    display: block;
+    width: 30%;
+    height: 50px;
+    background-color: var(--s_color_b1);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main{
+    padding-top:20px;
+  }
+  .form {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .form_head h2{font-size: 20px; margin: 90px 0; }
+  .form_head p{font-size: 14px;}
+  .form th label{
+    color: var(--s_color_w) !important;
+    font-size: 14px;
+  }
+  .form td label{
+    margin: 0px 10px;
+  }
+  .form table{
+    width: 100%;
+    border-top:2px solid #333;
+    border-bottom:2px solid #333;
+  }
+  .form th{
+    width: 95px !important;
+    padding: 6px 4px 10px 10px;
+    height: 45px;
+    background: var(--s_color_b1);
+    border-bottom: 1px solid #333;
+  }
+  .btn_submit{
+    display: block;
+    width: 30%;
+    height: 30px;
+    background-color: var(--s_color_b1);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+}

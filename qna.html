@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>자주 묻는 질문</title>
+  <link rel="stylesheet" href="./css/qna.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- 메타데이터 -->
+  <meta name="keywords" content="참좋은여행, 직판여행사, 여행정보, 해외여행정보, 패키지, 에어텔, 항공권, 허니문, 호텔, 골프여행 , 배낭여행, FIT여행, 자유여행, 골프여행, 고급여행상품, 테마여행, 크루즈, 국내여행, 제주여행" />
+  <meta name="description" content="고객의 만족을 최우선으로 생각하는 해외/국내여행 전문기업." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="참좋은여행" />
+  <meta property="og:url" content="http://www.verygoodtour.com" />
+  <meta property="og:description" content="고객의 만족을 최우선으로 생각하는 해외/국내여행 전문기업." />
+  <meta property="og:image" content="http://www.verygoodtour.com/images/mov2/logo_for_msg.jpg" />
+
+  <!-- 파비콘, 기본서식 파일 -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  
+  <!-- 플러그인 추가(jQuery, 폰트어썸) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <!-- 헤더 윗부분 -->
+    <div class="header-top">
+      <div class="ht_logo">
+        <h1>
+          <a href="index.php"><img src="./images/logo.png" alt="메인로고"></a>
+        </h1>
+      </div>
+      <form name="search" action="search.php" method="get">
+        <div class="ht_search">
+          <label for="keyword" class="hide">검색</label>
+          <input type="text" name="keyword" id="keyword"  placeholder="어디로 떠나고 싶으세요?"><button type="submit"><img src="./images/search.png" alt="검색"></button>
+        </div>
+      </form>
+      <div class="ht_banner">
+        <a href="#" title="상단 이벤트 배너"><img src="./images/main_event.jpg" alt=""></a>
+      </div>
+      <div class="ht_menu">
+        <a href="login.php" class="m_login"><i class="fa fa-user"></i></a>
+        <ul>
+          <li><a href="login.php" class="login" title="로그인">로그인</a></li>
+          <li><a href="#" class="review" title="여행후기">여행후기</a></li>
+          <li><a href="#" class="cs" title="고객센터">고객센터</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="menu_box">
+        <a href="javascript:void(0)">전체메뉴</a>
+        <ul class="mnu">
+          <li>
+            <a href="#" title="해외여행">해외여행</a>
+            <div class="sub_mnu">
+              <ul>
+                <li><a href="" title="유럽">유럽</a></li>
+                <li><a href="" title="동남아">동남아</a></li>
+                <li><a href="" title="일본">일본</a></li>
+                <li><a href="" title="대만&middot;홍콩&middot;마카오">대만&middot;홍콩&middot;마카오</a></li>
+                <li><a href="" title="중국&middot;몽골&middot;중앙아시아">중국&middot;몽골&middot;중앙아시아</a></li>
+                <li><a href="" title="괌&middot;사이판&middot;호주&middot;뉴질랜드">괌&middot;사이판&middot;호주&middot;뉴질랜드</a></li>
+                <li><a href="" title="미국&middot;캐나다&middot;하와이&middot;중남미">미국&middot;캐나다&middot;하와이&middot;중남미</a></li>
+                <li><a href="" title="중동&middot;아프리카&middot;인도">중동&middot;아프리카&middot;인도</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" title="국내·제주">국내&middot;제주</a>
+            <div class="sub_mnu">
+              <ul>
+                <li><a href="#" title="제주">제주</a></li>
+                <li><a href="#" title="내륙">내륙</a></li>
+                <li><a href="#" title="울릉도&middot;홍도&middot;백령도">울릉도&middot;홍도&middot;백령도</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" title="프리미엄">프리미엄</a>
+            <div class="sub_mnu">
+              <ul>
+                <li><a href="" title="유럽">유럽</a></li>
+                <li><a href="" title="동남아">동남아</a></li>
+                <li><a href="" title="일본">일본</a></li>
+                <li><a href="" title="대만&middot;홍콩&middot;마카오">대만&middot;홍콩&middot;마카오</a></li>
+                <li><a href="" title="중국&middot;몽골">중국&middot;몽골</a></li>
+                <li><a href="" title="호주&middot;뉴질랜드">호주&middot;뉴질랜드</a></li>
+                <li><a href="" title="미국&middot;캐나다&middot;중남미">미국&middot;캐나다&middot;중남미</a></li>
+                <li><a href="" title="중동&middot;아프리카">중동&middot;아프리카</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" title="지방출발">지방출발</a>
+            <div class="sub_mnu">
+              <ul>
+                <li><a href="#" title="부산출발">부산출발</a></li>
+                <li><a href="#" title="대구출발">대구출발</a></li>
+                <li><a href="#" title="청주출발">청주출발</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" title="항공·호텔">항공&middot;호텔</a>
+          </li>
+          <li>
+            <a href="#" title="라르고">라르고</a>
+            <div class="sub_mnu">
+              <ul>
+                  <li><a href="" title="유럽">유럽</a></li>
+                  <li><a href="" title="호주&middot;뉴질랜드">호주&middot;뉴질랜드</a></li>
+                  <li><a href="" title="미국&middot;캐나다&middot;중남미">미국&middot;캐나다&middot;중남미</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      $(function(){
+        // 메뉴 선택 스크립트
+        let c_num = 0;
+
+        $('.sub_mnu').hide();
+        $('.mnu > li:first-of-type').children('.sub_mnu').show();
+        $('.mnu > li:first-of-type').children('li > a').addClass('mnu_active');
+
+        $('.mnu > li').hover(function(){
+          if($(this).index() != c_num){
+            $(this).children('.sub_mnu').stop().slideDown(0);
+          }
+          $(this).children('.sub_mnu').addClass('mnu_index');
+        },
+        function(){
+          if($(this).index() != c_num){
+            $(this).children('.sub_mnu').stop().slideUp(0);
+          }
+          $(this).children('.sub_mnu').removeClass('mnu_index');
+        });
+
+        $('.mnu > li').click(function(){
+          $('.sub_mnu').hide();
+          $('.mnu > li > a').removeClass('mnu_active');
+          if($(this).index() != 4){
+            c_num = $(this).index();
+            $(this).children('.sub_mnu').show();
+            $(this).children('li > a').addClass('mnu_active');
+          }
+        });
+      });
+    </script>
+  </header>
+
+  <main class="faq-container">
+    <h2 class="faq-title">자주 묻는 질문</h2>
+    <p class="faq-description">
+      많은 고객님들께서 자주 물어보는 질문들입니다.<br>
+      만약 찾으시는 문의 내용이 없다면 고객센터로 연락주시면 친절히 답변해 드리겠습니다.
+    </p>
+
+    <table class="faq-table">
+      <thead>
+        <tr>
+          <th>NO.</th>
+          <th>질문내용</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr onclick="showAnswer(1)">
+          <td>Q1</td>
+          <td>같은 호텔, 같은 룸타입인데 요금이 다 달라요.
+            <i class="fas fa-angle-down act"></i>
+          </td>
+        </tr>
+        <tr id="answer-1" class="faq-answer-box">
+          <!-- 답변이 여기에 삽입됩니다. -->
+        </tr>
+        <tr onclick="showAnswer(2)">
+          <td>Q2</td>
+          <td>개인사정, 천재지변, 항공지연의 경우 호텔은 환불은 어떻게 진행 되나요?
+            <i class="fas fa-angle-down"></i>
+          </td>
+        </tr>
+        <tr id="answer-2" class="faq-answer-box">
+          <!-- 답변이 여기에 삽입됩니다. -->
+        </tr>
+        <tr onclick="showAnswer(3)">
+          <td>Q3</td>
+          <td>카카오계정으로 로그인했는데 이전에 다녀온 여행 내역과 포인트가 사라졌어요.
+            <i class="fas fa-angle-down"></i>
+          </td>
+        </tr>
+        <tr id="answer-3" class="faq-answer-box">
+          <!-- 답변이 여기에 삽입됩니다. -->
+        </tr>
+        <tr onclick="showAnswer(4)">
+          <td>Q4</td>
+          <td>[해외/국내] 모바일에서 항공권 온라인상담은 어떻게 하나요?
+            <i class="fas fa-angle-down"></i>
+          </td>
+        </tr>
+        <tr id="answer-4" class="faq-answer-box">
+          <!-- 답변이 여기에 삽입됩니다. -->
+        </tr>
+        <tr onclick="showAnswer(5)">
+          <td>Q5</td>
+          <td>조식명이 다르게 표시되어있는데 차이가 있나요?
+            <i class="fas fa-angle-down"></i>
+          </td>
+        </tr>
+        <tr id="answer-5" class="faq-answer-box">
+          <!-- 답변이 여기에 삽입됩니다. -->
+        </tr>
+        <tr onclick="showAnswer(6)">
+          <td>Q6</td>
+          <td>여권/비자 관련 자세한 정보 안내
+            <i class="fas fa-angle-down"></i>
+          </td>
+        </tr>
+        <tr id="answer-6" class="faq-answer-box">
+          <!-- 답변이 여기에 삽입됩니다. -->
+        </tr>
+        <tr onclick="showAnswer(7)">
+          <td>Q7</td>
+          <td>예약 후 언제까지 결제를 해야 하나요?
+            <i class="fas fa-angle-down"></i>
+          </td>
+        </tr>
+        <tr id="answer-7" class="faq-answer-box">
+          <!-- 답변이 여기에 삽입됩니다. -->
+        </tr>
+        <tr onclick="showAnswer(8)">
+          <td>Q8</td>
+          <td>요금은 세금과 봉사료 포함 금액인가요?
+            <i class="fas fa-angle-down"></i>
+          </td>
+        </tr>
+        <tr id="answer-8" class="faq-answer-box">
+          <!-- 답변이 여기에 삽입됩니다. -->
+        </tr>
+        <tr onclick="showAnswer(9)">
+          <td>Q9</td>
+          <td>호텔 예약 후 취소나 변경 규정은 어떻게 되나요?
+            <i class="fas fa-angle-down"></i>
+          </td>
+        </tr>
+        <tr id="answer-9" class="faq-answer-box">
+          <!-- 답변이 여기에 삽입됩니다. -->
+        </tr>
+        <tr onclick="showAnswer(10)">
+          <td>Q10</td>
+          <td>호텔 투숙일 이후 취소나 변경 규정은 어떻게 되나요?
+            <i class="fas fa-angle-down"></i>
+          </td>
+        </tr>
+        <tr id="answer-10" class="faq-answer-box">
+          <!-- 답변이 여기에 삽입됩니다. -->
+        </tr>
+      </tbody>
+    </table>
+    
+
+    <div id="faq-answer" class="faq-answer-box"></div>
+  </main>
+  <footer>
+    <div class="f_top">
+      <ul class="quick_menu">
+        <li>오시는 길&nbsp;&nbsp;</li>
+        <li>전화상담&nbsp;&nbsp;</li>
+        <li>1:1 문의&nbsp;&nbsp;</li>
+        <li>기업/단체&nbsp;&nbsp;</li>
+      </ul>
+      <h2>참좋은여행(주)</h2>
+      <div class="kosdaq"><img src="./images/ico_kosdaq.png" alt="코스닥상장법인">코스닥상장법인</div>
+      <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2118793420" class="company"><span>사업자정보확인</span></a>
+      <div class="f_info">
+        <address>대표이사 : 조현문, 이종혁 &#124; 서울특별시 중구 서소문로 135 연호빌딩 6, 11, 12층 &#124; 대표전화 1588-7557 &#124; 사업자등록번호 : 211-87-93420 &#124; 통신판매업신고 : 제2017-서울중구-1407호</address>
+        <p>&#x203B; 참좋은여행(주)은 개별 항공권과 호텔 숙박권 판매에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당 상품의 거래 정보 및 거래 등에 대해 책임을 지지 않습니다.</p>
+        <p>Copyright © verygoodtour.com All rights reserved.</p>
+      </div>
+      <div class="f_info_m">
+        <address>
+          <p>대표자 : 조현문, 이종혁 &#124; 사업자등록번호 : 211-87-93420</p>
+          <p>통신판매업신고 : 제2017-서울중구-1407호<b><a href="#" title="사업자정보확인">&nbsp;[사업자정보확인]</a></b></p>
+          <p>개인정보관리 책임자   오운 wunos@verygoodtour.com</p>
+          서울특별시 중구 서소문로 135 연호빌딩 6, 11, 12층 참좋은여행<br>부산광역시 동구 중앙대로 192 한국교직원공제회 10층<br>대구&middot;경북 대구광역시 중구 동덕로 167 KT 타워 신관 11층<br>대표전화 1588-7557 &#124;</p>
+          <ul class="short_menu">
+            <li>회사소개&nbsp;&nbsp;</li>
+            <li><b>개인정보처리방침</b>&nbsp;&nbsp;</li>
+            <li>이용약관&nbsp;&nbsp;</li>
+            <li>여행약관&nbsp;&nbsp;</li>
+            <li>여행자보험&nbsp;&nbsp;</li>
+            <li>고객센터&nbsp;&nbsp;</li>
+          </ul>
+          <p>&#x203B; 참좋은여행(주)은 개별 항공권과 호텔 숙박권 판매에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당 상품의 거래 정보 및 거래 등에 대해 책임을 지지 않습니다.</p>
+          <p>Copyright © verygoodtour.com All rights reserved.</p>
+        </address>
+      </div>
+      <div class="sns">
+        <ul>
+          <li><a href="https://story.kakao.com/ch/verygoodtour" title="카카오스토리"></a></li>
+          <li><a href="https://pf.kakao.com/_zbjGE" title="카톡채널"></a></li>
+          <li><a href="https://www.facebook.com/verygoodtour" title="페이스북"></a></li>
+          <li><a href="https://www.instagram.com/verygoodtour_official" title="인스타그램"></a></li>
+          <li><a href="https://blog.naver.com/vgt0901" title="네이버블로그"></a></li>
+          <li><a href="https://www.youtube.com/user/verygoodtourofficial" title="유튜브"></a></li>
+        </ul>
+      </div>
+      <div class="familysite">
+        <ul>
+          <li><a href="javascript:void(0);" title="패밀리사이트">패밀리사이트</a><img src="./images/family_arrow_down.png" alt="패밀리접기" id="familyarrow"></li>
+          <li><a href="http://www.samchuly.co.kr/" title="삼천리자전거">삼천리자전거</a></li>
+          <li><a href="http://www.cellosports.com/" title="CELLO">CELLO</a></li>
+          <li><a href="https://www.glnco.co.kr/" title="GL&#x26;Co">GL&#x26;Co</a></li>
+          <li><a href="http://www.fedora.co.kr/" title="쁘레베베">쁘레베베</a></li>
+          <li><a href="http://www.smartbike.co.kr/" title="스마트 자전거">스마트 자전거</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f_bottom">
+      <ul>
+        <li>회사소개<hr>
+          <ul>
+            <li><a href="" title="참좋은여행 소개">참좋은여행 소개</a></li>
+            <li><a href="" title="부서별/지점별 연락처">부서별/지점별 연락처</a></li>
+            <li><a href="" title="찾아오시는 길">찾아오시는 길</a></li>
+            <li><a href="" title="채용안내">채용안내</a></li>
+          </ul>
+        </li>
+        <li>약관 및 규정<hr>
+          <ul>
+            <li><a href="" title="개인정보처리방침"><b>개인정보처리방침</b></a></li>
+            <li><a href="" title="이용약관">이용약관</a></li>
+            <li><a href="" title="여행약관">여행약관</a></li>
+            <li><a href="" title="여행자보험">여행자보험</a></li>
+          </ul>
+        </li>
+        <li>고객지원<hr>
+          <ul>
+            <li><a href="" title="무이자할부 안내">무이자할부 안내</a></li>
+            <li><a href="" title="포인트 안내">포인트 안내</a></li>
+            <li><a href="" title="자주 묻는 질문">자주 묻는 질문</a></li>
+            <li><a href="" title="1:1문의(해외여행)">1:1문의(해외여행)</a></li>
+            <li><a href="" title="1:1문의(자유여행)">1:1문의(자유여행)</a></li>
+            <li><a href="" title="1:1문의(온라인여행)">1:1문의(온라인여행)</a></li>
+          </ul>
+        </li>
+        <li>이용 안내<hr>
+          <ul>
+            <li><a href="" title="예약/결제 가이드">예약/결제 가이드</a></li>
+            <li><a href="" title="여행가이드북">여행가이드북</a></li>
+            <li><a href="" title="법인/단체 문의">법인/단체 문의</a></li>
+            <li><a href="" title="여행문의">여행문의</a></li>
+          </ul>
+        </li>
+        <li>공지사항<a href="" title="더보기">&#x2B;더보기</a><hr>
+          <ul>
+            <li><a href="" title="">게시글1</a></li>
+            <li><a href="" title="">게시글2</a></li>
+            <li><a href="" title="">게시글3</a></li>
+            <li><a href="" title="">게시글4</a></li>
+            <li><a href="" title="">게시글5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="f_prize">
+      <ul>
+        <li><img src="./images/ftr_ban_01.png" alt="일자리으뜸기업100"><span><b>대한민국 일자리<br>으뜸기업 100 선정</b><br>고용노동부 선정(2018.06)</span></li>
+        <li><img src="./images/ftr_ban_02.png" alt="전화친절도평가1위"><span><b>종합여행사 전화 친절도 평가<br>4년 연속 가장 친절한 여행사 1위</b><br>세계여행신문 주최(2018.07)</span></li>
+        <li><img src="./images/ftr_ban_03.png" alt="소비자만족도1위"><span><b>소비자만족도 1위</b><br>세종대 관광산업연구소&#x26;<br>컨슈머인사이트 조사 (2017.11)</span></li>
+        <li><img src="./images/ftr_ban_04.png" alt="공정거래위원장표창"><span><b>공정거래위원회<br>위원장표창 수상</b><br>소비자의날(2016.12)</span></li>
+        <li><img src="./images/ftr_ban_03.png" alt="서비스품질1위"><span><b>여행사 서비스품질 1위</b><br>컨슈머인사이트 조사<br>(2016.12)</span></li>
+        <li><img src="./images/ftr_ban_05.png" alt="서비스품질1위"><span><b>소비자중심경영 (CCM)<br>4회 연속 인증 (2014~2020)</b></span></li>
+        <li><img src="./images/ftr_ban_06.png" alt="서비스품질1위"><span><b>국외여행상품<br>정보제공표준안<br>참여여행사마크</b></span></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    $(function(){
+      $('.familysite').hover(function(){
+        $('.familysite').css('height','auto');
+        $('#familyarrow').attr('src','./images/family_arrow_up.png');
+      }, function(){
+        $('.familysite').css('height','35px');
+        $('#familyarrow').attr('src','./images/family_arrow_down.png');
+      });
+    });
+  </script>
+  <script>
+  const answers = {
+    1: '<span class="ans-label">Ans :</span> <p>당사는 여러 호텔 공급사를 사용하여 다양한 요금이 조회됩니다.</p><p>동일 호텔의 동일 룸 타입이라도 공급사에 따라 요금이 다를 수 있습니다.</p><p>따라서 동일 룸타입의 동일 조건에서 가장 저렴한 요금을 선택해 주시면 됩니다.</p>',
+    2: '<span class="ans-label">Ans :</span> <p>환불 여부는 호텔 규정과 항공사 정책에 따라 다릅니다. 고객센터로 문의해주세요.</p>',
+    3: '<span class="ans-label">Ans :</span> <p>카카오 계정으로 연결 시, 기존에 회원이신 분들은 자동으로 정보가 통합됩니다.</p><p>단, 카카오 계정의 이름과 참좋은여행 ID의 이름이 일치하지 않는 경우 신규 가입처리 됩니다.</p><p> 기존의 회원정보는 그대로 남아있으니 1:1 문의나 전화 문의 주시면 회원 정보 통합해드리겠습니다.</p><p> [마이페이지] 내 최근 예약내역 아래에 있는 [개인정보 통합] 버튼을 통해서도 기존에 사용하시던 참좋은여행 계정과 카카오계정을 통합하실 수 있습니다.</p>',
+    4: '<span class="ans-label">Ans :</span> <p>참좋은여행 모바일 앱/ 모바일웹에서 아래 경로를 통해 항공권 관련 "온라인상담"을 등록해주시면 보다 빠른 상담이 가능합니다.</p><p> 모든 상담은 평일 영업시간 이내에만 이루어지며, 이 외 시간에 등록된 경우 업무시간 내 순차적으로 답변을 드립니다.</p>',
+    5: '<span class="ans-label">Ans :</span> <p>당사는 여러 호텔공급사를 사용하고 있으며, 공급사마다 호텔과 계약된 요금에 따른 호텔요금이 다르며,</p><p> 조식포함이어도 포함된 조식종류가 다를 수 있습니다.또한 동일한 조식타입이어도 다양하게 표시되는 경우가 있습니다.</p><p> 자세한 문의를 원하시면 각 여행지역 담당부서 대표번호로 전화주시면 안내해드리겠습니다.</p>',
+    6: '<span class="ans-label">Ans :</span> <p>여권안내 <a href="http://www.verygoodtour.com/TravelInfo/Passport?menuCode=10905" target="_blank">http://www.verygoodtour.com/TravelInfo/Passport?menuCode=10905</a></p><p>비자안내 <a href="http://www.verygoodtour.com/TravelInfo/VisaInfo?menuCode=10906" target="_blank">http://www.verygoodtour.com/TravelInfo/VisaInfo?menuCode=10906</a></p><p> 페이지 참고 해주시기 바랍니다.</p>',
+    7: '<span class="ans-label">Ans :</span> <p>호텔을 예약하실 때 취소마감일이 표기되어 있으며 취소 마감일이 남아 있는 예약건은</p><p> 취소 마감일 전까지 결제를 완료해주시면 되오며 (현금,카드결제 가능) 취소마감일이 지난 예약의 경우는</p><p> 카드결제(개런티)로만 진행이 가능합니다. 단, 취소마감일이 지난 상품(환불불가)의 경우 예약 확정 이후 취소, 변경, 환불이 불가합니다.</p>',
+    8: '<span class="ans-label">Ans :</span> <p>홈페이지상에 보이는 요금은 객실요금 기준으로 세금과 봉사료 모두 포함된 금액입니다.</p><p>조식의 경우 호텔별 도시별 포함여부가 다르므로,</p><p> 조식 부분에서 포함여부를 확인해 주시기 바랍니다.</p>',
+    9: '<span class="ans-label">Ans :</span> <p>취소마감일 이전에 요청하신 변경 및 취소에 대해서는 별도의 수수료가 부과되지 않습니다.</p><p>취소마감일 이후에 요청된 호텔 변경 및 취소에 대한 수수료는 아래와 같습니다.</p><p><b>1)일반 취소 규정</b></p><p>취소마감일 이전 : 취소 변경 수수료 없음</p><p>취소 마감일 이후 : 예약된 호텔의 첫 1착부터 최대 전체 숙박비에 대한 요금 (호텔별로 지역별로 상이)</p><p>투숙일 당일취소 : 예약된 호텔 숙박 요금의 총액</p><p><b>2) 특별 취소 규정</b></p><p>행사기간, 이벤트, 연말 연 시, 리조트 호텔, 예약 시에는 별도의 규정이 적용되며, 취소 마감일 이후 취소나</p><p> 변경시에는 호텔 비용 전액에 대한 취소수수료나 변경 수수료가 적용됩니다.</p>',
+    10: '<span class="ans-label">Ans :</span> <p>호텔 투숙일 이후에 발생하는 취소나 변경은 반드시 당사를 통하여 이루어져야 하며,</p><p>일반적으로 투숙일 이후의 취소나 변경에 대해서는 호텔비 전액에 대한 수수료가 적용됩니다.</p>'
+  };
+
+  function showAnswer(questionId) {
+  const clickedAnswerRow = document.getElementById('answer-' + questionId);
+  const questionRow = clickedAnswerRow.previousElementSibling;  // 클릭한 tr 요소 (질문)
+  const arrowIcon = questionRow.querySelector('i'); // 해당 질문의 화살표 아이콘
+  const isVisible = clickedAnswerRow.style.display === 'table-row';
+
+  // 모든 답변을 닫고, 모든 화살표를 원래 상태로 되돌리기
+  const allAnswerRows = document.querySelectorAll('[id^="answer-"]');
+  allAnswerRows.forEach(row => {
+    row.style.display = 'none';
+    row.previousElementSibling.querySelector('i').classList.remove('rotate'); // 모든 화살표 회전 제거
+    row.previousElementSibling.classList.remove('active'); // 모든 행에서 active 클래스 제거
+  });
+
+  // 클릭한 답변이 원래 열려있지 않았다면 열고, 화살표를 회전시킴
+  if (!isVisible) {
+    const answerCell = document.createElement('td');
+    answerCell.setAttribute('colspan', '2');
+    answerCell.innerHTML = answers[questionId];
+    clickedAnswerRow.innerHTML = '';
+    clickedAnswerRow.appendChild(answerCell);
+    clickedAnswerRow.style.display = 'table-row';
+
+    questionRow.classList.add('active'); // 클릭한 행에 active 클래스 추가
+    arrowIcon.classList.add('rotate'); // 화살표 회전
+  }
+}
+
+</script>
+
+
+
+  
+</body>
+</html>

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+main {
+    width: 850px; margin: 0 auto;
+    form {
+        padding: 30px 20px;
+        margin-bottom: 10%;
+        legend {text-align: center; padding-bottom: 5%; margin-bottom: 5% !important; font-size: 2rem !important; font-weight: bold; border-bottom: 2px solid var(--s_color_bk);}
+        label {display: inline-block; width: 125px; font-size: 20px;}
+        label[for="answer"] {transform: translateY(-720%);}
+        div {width: 250px; margin: 0 auto;}
+        div {
+            button {border: 1px solid var(--m_color2); background: #fff; border-radius: 5px; padding: 10px 20px; margin-right: 10px;
+                a {color: var(--m_color2) !important; font-weight: bold;}
+            }
+            input[type=submit] {background-color: var(--m_color2); color: #fff; border: none; border-radius: 5px; padding: 10px 20px;}
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.manage_table {
+  width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 155px;
+}
+.manage_table h4 {
+  font-size: 28px;
+  padding-top: 40px;
+}
+.manage_table div {
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.manage_table div a {
+  display: inline-block;
+}
+.manage_table div a:hover {
+  color: var(--m_color) !important;
+  transition: 0.2s;
+}
+.manage_table div .delete_all {
+  margin-right: 10px;
+}
+.manage_table table {
+  width: 1100px;
+}
+.manage_table table thead {
+  background-color: var(--s_color_b1);
+  color: var(--s_color_w);
+  text-align: center;
+  height: 55px;
+  font-size: 18px;
+}
+.manage_table table th:first-child {
+  width: 15%;
+}
+.manage_table table th:last-child {
+  width: 20%;
+}
+.manage_table table td {
+  border-right: 2px solid var(--s_color_bk);
+  height: 60px;
+  text-indent: 20px;
+  border-bottom: 2px solid var(--s_color_bk);
+}
+.manage_table table th {
+  border-right: 2px solid #fff;
+}
+.manage_table table td:last-child {
+  border-right: none;
+}
+.manage_table table td:last-child a {
+  display: inline-block;
+  padding: 5px 20px 5px 0px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.manage_table table td:last-child .edit {
+  background-color: var(--m_color2);
+  color: var(--s_color_w) !important;
+}
+.manage_table table td:last-child .delete {
+  background-color: var(--s_color_g1);
+}
+.manage_table table tbody td:first-child {
+  color: var(--m_color);
+  font-weight: bold;
+  font-size: 20px;
+}
+.manage_table table tbody tr:last-child td {
+  border-bottom: none;
+}/*# sourceMappingURL=list_admin.css.map */

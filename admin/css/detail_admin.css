@@ -1,0 +1,78 @@
+main .content_box {
+  width: 1200px;
+  margin: 100px auto;
+}
+main .content_box h2 {
+  text-align: center;
+}
+main .content_box .btn_panel ul {
+  display: flex;
+  float: right;
+  margin-bottom: 40px;
+}
+main .content_box .btn_panel ul li a {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 10px;
+  background: var(--m_color2);
+  color: #fff !important;
+}
+main .content_box .btn_panel ul li:first-child a {
+  background: var(--m_color);
+  font-weight: bold;
+}
+main .content_box .btn_panel ul li:last-child a {
+  background-color: #ccc;
+}
+main .content_box .content_table {
+  border-top: 2px solid var(--s_color_bk);
+}
+main .content_box .content_table tr {
+  line-height: 60px;
+}
+main .content_box .content_table tr th {
+  width: 15%;
+}
+main .content_box .content_table tr .s_img {
+  display: flex;
+}
+main .content_box .content_table tr .s_img .table_simg {
+  width: 250px;
+  margin-right: 20px;
+}
+main .content_box .content_table tr .s_img .table_dimg {
+  width: 500px;
+}
+main .schedule_list table {
+  text-align: center;
+}
+main .schedule_list .caption-top {
+  font-size: 24px;
+  color: var(--s_color_bk);
+  font-weight: bold;
+  border-bottom: 2px solid var(--s_color_bk);
+  padding-bottom: 20px;
+}
+main .schedule_list .caption-top .btn {
+  float: right;
+  color: #fff !important;
+}
+main .schedule_list thead {
+  line-height: 40px;
+}
+main .schedule_list tbody tr {
+  line-height: 50px;
+}
+main .schedule_list tbody tr td:last-child a {
+  color: #fff !important;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+main .schedule_list tbody tr td:last-child a:first-child {
+  background-color: var(--m_color2);
+  margin-right: 10pxs;
+}
+main .schedule_list tbody tr td:last-child a:last-child {
+  background-color: #ccc;
+}/*# sourceMappingURL=detail_admin.css.map */

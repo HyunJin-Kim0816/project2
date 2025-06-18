@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+/* ====================
+    :root - 컬러, 폰트 설정
+==================== */
+:root {
+  --m_color: #0199F1;
+  --m_color2: #0066FF;
+  --s_color_b1: #00AEED;
+  --s_color_b2: #3888FF;
+  --s_color_b3: #06BDFF;
+  --s_color_r1: #F3776B;
+  --s_color_r2: #D80042;
+  --s_color_g1: #F5F5F8;
+  --s_color_g2: #757575;
+  --s_color_w: #FFFFFF;
+  --s_color_bk: #333333;
+  --f_size_base: 16px;
+}
+
+/* ====================
+    공통 스타일
+==================== */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+u {
+  color: #6b6b6b;
+}
+
+/* ====================
+    로그인 박스
+==================== */
+.login_wrap {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+}
+.login_wrap .login_head h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.login_wrap .login_head p {
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+.login_wrap form {
+  margin: 0 auto;
+}
+.login_wrap form .login_title {
+  text-align: center;
+}
+.login_wrap form .login_title span {
+  font-size: 20px;
+  color: var(--s_color_g2);
+  background-color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  top: -17px;
+  padding: 0px 10px;
+}
+.login_wrap form .login_title::before {
+  display: block;
+  height: 1px;
+  background-color: var(--s_color_g2);
+  content: "";
+}
+.login_wrap form .input_box {
+  position: relative;
+}
+.login_wrap form .input_box .fa-circle-user, .login_wrap form .input_box i.fa-lock {
+  position: absolute;
+  font-size: 20px;
+  top: 17px;
+  left: 45px;
+  color: var(--s_color_b1);
+}
+.login_wrap form .input_box i.fa-eye-slash {
+  position: absolute;
+  font-size: 20px;
+  top: 100px;
+  right: 38px;
+  color: var(--s_color_b1);
+}
+.login_wrap form .input_box i.fa-lock {
+  top: 100px;
+}
+.login_wrap form .input_box input[type=text], .login_wrap form .input_box input[type=password] {
+  width: 90%;
+  padding: 12px 55px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.login_wrap form .idpw {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.login_wrap form .idpw a {
+  display: inline-block;
+  color: var(--s_color_g2);
+  text-decoration: none;
+  color: var(--s_color_g2);
+  z-index: 100;
+}
+.login_wrap form .idpw .findpw {
+  padding-left: 20px;
+}
+.login_wrap form .idpw .findid {
+  border-right: 1px solid #aaa;
+  padding-right: 20px;
+}
+.login_wrap form .login_btn, .login_wrap form .join_btn {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  font-weight: bold;
+}
+.login_wrap form .login_btn {
+  border: 2px solid var(--m_color);
+  color: var(--s_color_bk);
+  background-color: #fff;
+}
+.login_wrap form .join_btn {
+  background: var(--m_color2);
+  color: #fff !important;
+  text-align: center;
+}
+.login_wrap form .service {
+  margin: 20px 0px;
+}
+.login_wrap form .service p {
+  color: #757575;
+  font-size: 14px;
+}
+.login_wrap form .simple_login_section .e_login {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+.login_wrap form .simple_login_section .e_login p {
+  border-radius: 50%;
+  font-size: 14px;
+  margin: 0px 20px;
+}
+.login_wrap form .simple_login_section .e_login p a {
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.login_wrap form .simple_login_section .e_login p a img {
+  width: 50px;
+  height: 50px;
+}
+.login_wrap form .submit_btn {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  background-color: var(--s_color_w);
+  border: 1px solid var(--s_color_g2);
+}
+
+@media screen and (max-width: 767px) {
+  .login_wrap {
+    width: 100%;
+    padding: 20px;
+    margin: 80px auto;
+  }
+  .login_wrap input[type=text],
+  .login_wrap input[type=password],
+  .login_wrap .login_btn,
+  .join_btn,
+  .submit_btn {
+    width: 100%;
+  }
+  .e_login li {
+    width: 60px;
+    height: 60px;
+  }
+  .e_login li a img {
+    max-width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=login.css.map */

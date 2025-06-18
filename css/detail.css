@@ -1,0 +1,449 @@
+@charset "utf-8";
+
+/* 상단 슬라이드 서식 */
+.detail_slide{
+  background: #333;
+  height: 480px;
+}
+.detail_slide > article{
+  width: 980px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.detail_slide .slide_wrapper ul{
+  display: flex;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.slide_prev, .slide_next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  z-index: 10;
+}
+.slide_next{
+  right:0;
+}
+.slide_prev i, .slide_next i{
+  font-size: 3rem;
+  color: #ffffff30;
+  text-shadow: -1px -1px 0 #cccccc30, 1px -1px 0 #cccccc30, -1px  1px 0 #cccccc30, 1px  1px 0 #cccccc30;
+  transition: 0.3s;
+}
+.slide_prev i:hover, .slide_next i:hover{
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #cccccc, 1px -1px 0 #cccccc, -1px  1px 0 #cccccc, 1px  1px 0 #cccccc;
+}
+
+/* 상품코드 박스 서식 */
+.detail_info_code{
+  width: 100%; height: 50px;
+  background: var(--m_color);
+}
+.detail_info_code .product_code{
+  width:1200px;
+  margin:0 auto;
+}
+.detail_info_code .product_code span{
+  line-height: 50px;
+  color: var(--s_color_w);
+}
+.detail_info_code .product_code .info_code{
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/* 상품상세정보 서식 */
+.detail_info{
+  width: 1200px;
+  margin:50px auto;
+  display: flex;
+}
+.detail_info_table .info_term{
+  color: var(--m_color);
+}
+.detail_info_table .info_time_div{
+  display: flex;
+}
+.detail_info_table .info_time{
+  display: flex;
+}
+.detail_info_table .info_time:last-of-type{
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px dotted var(--m_color);
+}
+.detail_info_table .info_time div{
+  width: 70px; height: 30px;
+  background: var(--m_color);
+  color: var(--s_color_w);
+  padding: 2px 5px;
+  display: block;
+  margin: 0px 10px 0px 0px;
+}
+.detail_info_table p{
+  font-weight: normal;
+}
+.detail_info_table .info_time p span{
+  font-weight: bold;
+}
+/* 전체 정보 테이블 */
+.detail_info_table .info_table{
+  width: 700px;
+  border-top: 2px solid var(--s_color_bk);
+}
+.detail_info_table .info_table > tbody > tr > th{
+  width: 100px;
+  background: var(--m_color);
+  color: var(--s_color_w);
+  border: 1px solid var(--s_color_w);
+  text-align: center;
+}
+.detail_info_table .info_table > tbody > tr > td{
+  border: 1px solid var(--s_color_g2);
+  font-weight: bold;
+  padding: 20px;
+}
+.detail_info_table .info_table td:first-child{
+  border-left: none;
+}
+.detail_info_table .info_table td:last-child{
+  border-right: none;
+}
+
+/* 가격 정보 테이블 */
+.detail_info_table .d_table{
+  width: 500px;
+  border-top: 2px solid var(--s_color_bk);
+}
+.detail_info_table .d_table th,.detail_info_table .d_table td{
+  text-align: center;
+  line-height: 30px;
+}
+.detail_info_table .d_table th{
+  background: var(--m_color);
+  color: var(--s_color_w);
+  border: 1px solid var(--s_color_w);
+}
+.detail_info_table .d_table td{
+  border: 1px solid var(--s_color_g2);
+  font-weight: bold;
+}
+.detail_info_table .d_table td:first-child{
+  border-left: none;
+}
+.detail_info_table .d_table td:last-child{
+  border-right: none;
+}
+.info_expense{
+  color: #f00;
+  font-weight: bold;
+}
+
+/* 포함 불포함 테이블 */
+.detail_info_table .inout_table{
+  width: 700px;
+}
+.detail_info_table .inout_table td{
+  width: 50%;
+  text-align: left;
+  padding: 5px;
+}
+
+/* 예약하기 영역 */
+.booking_area{
+  width: 450px;
+  border: 1px solid var(--m_color);
+  border-radius: 20px;
+  margin: 40px 0px 50px 50px;
+  padding: 20px;
+}
+.booking_area ul{
+  width: 100%;
+  padding-left: 0px;
+}
+.booking_area li{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 20px;
+}
+.booking_area li div{
+  right: 0;
+}
+.booking_area li select{
+  width: 100px;
+  text-align: center;
+}
+.booking_area .total_price{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: var(--m_color);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.booking_area .total_price .total_text{
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.booking_area .total_price .price_num{
+  position: absolute;
+  margin: 20px;
+  right: 20px;
+  bottom: 10px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+.booking_area .book_btn{
+  width: 100%; height: 60px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--m_color2);
+  background: var(--m_color2);
+  color: #fff;
+  font-weight: bold;
+}
+.booking_area .back_btn{
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--m_color);
+  background: var(--m_color);
+  color: #fff !important;
+  font-weight: bold;
+}
+.booking_area .dchg_btn{
+  display: inline-block;
+  width: 48%; float: right;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--s_color_g2);
+  background: var(--s_color_w);
+  font-weight: bold;
+}
+
+/* 상품설명 영역 */
+.detail_img{
+  width: 1200px;
+  margin: 50px auto;
+}
+.detail_img h3{
+  text-align: center;
+}
+.detail_img img{
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+main .modal {
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.719);
+}
+main .modal .modal-overlay {
+  width: 1000px;
+  height: 750px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0px 40px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .modal .modal-overlay .cal_title {
+  font-size: 30px;
+}
+main .modal .modal-overlay p {
+  border-top: 1px solid #333;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+main .modal .modal-overlay .fa-xmark {
+  font-size: 42px;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  cursor: pointer;
+}
+main .modal .modal-overlay .calendar {
+  width: 90%;
+  margin: 0 auto;
+}
+main .modal .modal-overlay .calendar caption {
+  display: none;
+}
+main .modal .modal-overlay .calendar thead {
+  text-align: center;
+}
+main .modal .modal-overlay .calendar thead tr th:first-child {
+  color: #f00;
+}
+main .modal .modal-overlay .calendar thead tr th {
+  color: var(--s_color_g2);
+}
+main .modal .modal-overlay .calendar thead tr th:last-child {
+  color: var(--m_color2);
+}
+main .modal .modal-overlay .calendar tbody {
+  text-align: center;
+}
+main .modal .modal-overlay .calendar tbody tr td:first-child {
+  color: #f00;
+}
+main .modal .modal-overlay .calendar tbody tr td {
+  color: var(--s_color_g2);
+  padding: 30px;
+}
+main .modal .modal-overlay .calendar tbody tr td:last-child {
+  color: var(--m_color2);
+}
+main .modal .modal-overlay .calendar tbody tr td.selected {
+  background-color: var(--m_color2) !important;
+  color: #fff !important;
+  font-weight: bold;
+  display: inline-block;
+}
+main .modal .dep_day{
+  display: inline-block;
+  width: 50px; height: 50px;
+  line-height: 50px;
+  background-color: var(--m_color) !important;
+  color: #fff !important;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+}
+main .modal h2 {
+  font-size: 36px !important;
+  text-align: center;
+  line-height: 100px !important;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  .detail_slide{
+    height: auto;
+  }
+  .detail_slide > article, .slide img{
+    width: 100%;
+    max-width: 980px;
+  }
+  .slide_wrapper{
+    width: 300%;
+  }
+  .product_code{padding: 0px 10px;}
+  .detail_info, .detail_info_table, .booking_area, .detail_img, .d_table, .inout_table, .info_table, .product_code {
+    width: 100% !important;
+  }
+  .detail_info{
+    width: 100%;
+  }
+  .detail_info_table{
+    margin: 20px;
+  }
+  .detail_info .info_table{
+    width: 100%;
+  }
+  .detail_info_table .inout_table{
+    width: 100%;
+  }
+  .detail_info_table .info_time_div {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .detail_info_table .info_time:last-of-type {
+    margin-left: 0px;
+    padding-left: 0px;
+    border-left: none;
+  }
+  .booking_area{
+    width: 400px !important;
+    margin:20px;
+  }
+  .detail_img{
+    width: 100%;
+  }
+  main .modal .modal-overlay {
+    width: 100%; height: 500px;
+    padding: 0px;
+  }
+  main .modal .modal-overlay .calendar tbody tr td {
+    padding: 10px;
+  }
+  main .modal .dep_day{
+    display: inline-block;
+    width: 25px; height: 25px;
+    line-height: 25px;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .detail_slide{
+    margin-top: 80px;
+    height: auto;
+  }
+  .detail_slide > article, .slide img{
+    width: 100%;
+  }
+  .slide_wrapper{
+    width: 300%;
+  }
+  .product_code{padding: 0px 10px;}
+  .detail_info, .detail_info_table, .booking_area, .detail_img, .d_table, .inout_table, .info_table, .product_code, .detail_img img{
+    width: 100% !important;
+  }
+  .booking_area{
+    margin:20px 0px;
+  }
+  .detail_info{
+    flex-direction: column;
+  }
+  .detail_info_table .info_time_div {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .detail_info_table .info_time:last-of-type {
+    margin-left: 0px;
+    padding-left: 0px;
+    border-left: none;
+  }
+  .detail_info > .detail_info_table > .info_table > tbody > tr > th{
+    padding: 5px;
+  }
+  main .modal .modal-overlay {
+    width: 100%; height: 500px;
+    padding: 0px;
+  }
+  main .modal .modal-overlay .calendar tbody tr td {
+    padding: 10px;
+  }
+  main .modal .dep_day{
+    display: inline-block;
+    width: 25px; height: 25px;
+    line-height: 25px;
+    border-radius: 15px;
+  }
+
+}

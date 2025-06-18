@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.manage_table {
+    width: 1100px; margin: 0 auto;
+    margin-bottom: 155px;
+    h4 {font-size: 28px; padding-top: 40px;}
+    div {text-align: right; margin-right: 20px; margin-bottom: 10px;
+        a {display: inline-block;}
+        a:hover {color: var(--m_color) !important; transition: 0.2s;}
+        .delete_all {margin-right: 10px;}
+    }
+    table {
+        width: 1100px;
+        thead {
+            background-color: var(--s_color_b1); color: var(--s_color_w); text-align: center;
+            height: 55px; font-size: 18px;
+        }
+        th:first-child {width: 15%;}
+        th:last-child {width: 20%;}
+        td {border-right: 2px solid var(--s_color_bk); height: 60px; text-indent: 20px; border-bottom: 2px solid var(--s_color_bk);}
+        th {border-right: 2px solid #fff;}
+        td:last-child {
+            border-right: none;
+            a {display: inline-block; padding: 5px 20px 5px 0px; border-radius: 5px; margin-left: 10px;}
+            .edit {background-color: var(--m_color2); color: var(--s_color_w) !important;}
+            .delete {background-color: var(--s_color_g1);}
+        }
+        tbody {
+            td:first-child {color: var(--m_color); font-weight: bold; font-size: 20px;}
+            tr:last-child {
+                td {border-bottom: none;}
+            }
+        }
+    }
+}

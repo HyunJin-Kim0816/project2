@@ -1,0 +1,75 @@
+main {
+  width: 850px;
+  margin: 0 auto;
+}
+main form {
+  padding: 30px 20px;
+}
+main form legend {
+  text-align: center;
+  margin-bottom: 5% !important;
+  font-size: 2rem !important;
+  font-weight: bold;
+}
+main form .contant_box table {
+  width: 100%;
+}
+main form .contant_box table tr th {
+  line-height: 70px;
+}
+main form .contant_box table tr th label {
+  width: 125px;
+}
+main form .contant_box table tr .code {
+  line-height: 40px;
+}
+main form .contant_box table tr td input[type=text] {
+  width: 70%;
+  padding: 5px 8px;
+  border: 1px solid var(--s_color_g2);
+  border-radius: 5px;
+  text-indent: 5px;
+}
+main form .contant_box table tr td #p_code {
+  width: 80%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+main form .contant_box table tr td .btn_codecheck {
+  background-color: var(--m_color2);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+main form .contant_box table tr td #s_airline {
+  margin-top: 17px;
+}
+main form .contant_box table tr td #s_dep_time1, main form .contant_box table tr td #s_dep_time2, main form .contant_box table tr td #s_des_time1, main form .contant_box table tr td #s_des_time2 {
+  width: 55%;
+}
+main form .contant_box table tr td #s_dep_time1_h, main form .contant_box table tr td #s_dep_time2_h, main form .contant_box table tr td #s_des_time1_h, main form .contant_box table tr td #s_des_time2_h, main form .contant_box table tr td #s_dep_time1_m, main form .contant_box table tr td #s_dep_time2_m, main form .contant_box table tr td #s_des_time1_m, main form .contant_box table tr td #s_des_time2_m {
+  width: 10%;
+}
+main form .contant_box table tr td #s_dep_code, main form .contant_box table tr td #s_des_code {
+  margin-top: 10px;
+}
+main form .contant_box table tr td #s_meeting {
+  margin-top: 17px;
+}
+main form .contant_box table tr td #s_price_adult, main form .contant_box table tr td #s_price_child, main form .contant_box table tr td #s_price_baby {
+  width: 70%;
+}
+main form .contant_box table tr td #s_price_child, main form .contant_box table tr td #s_price_baby {
+  margin-top: 17px;
+}
+main form .contant_box .submit {
+  width: 35%;
+  margin: 0 auto;
+}
+main form .contant_box .submit input[type=submit] {
+  margin-right: 10px;
+}
+main form .contant_box .submit a {
+  color: #fff !important;
+  padding: 5px 40px;
+}/*# sourceMappingURL=schedule_admin.css.map */

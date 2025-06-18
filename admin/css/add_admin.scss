@@ -1,0 +1,39 @@
+@charset "utf-8";
+main {
+    width: 850px; margin: 0 auto;
+    form {
+        padding: 30px 20px;
+        legend {
+            text-align: center; margin-bottom: 5% !important; font-size: 2rem !important; font-weight: bold;
+        }
+        p {margin-bottom: 30px;
+            label {display: inline-block; width: 125px;}
+            input[type=text], textarea {
+            border: 1px solid var(--s_color_g2); border-radius: 5px; text-indent: 5px;
+            }
+            input[type=text] {padding: 7px 10px; width: 82%;}
+            #p_code {width: 68%; margin-right: 2%;}
+            .btn_codecheck {background-color: var(--m_color2); color: var(--s_color_w); border: none; padding: 7px 15px; border-radius: 5px;}
+            label[for=p_slide], label[for=p_image] {margin-bottom: 10px;}
+        }
+        .select {
+            p {display:flex;
+                input[type=text] {width: 30%;}
+                label[for=p_minnum] {width: 10%;}
+            }
+        }
+        .textarea {
+            label {transform: translateY(-930%);}
+        }
+        .guide {
+            span {display: inline-block; width: 125px;}
+            label {margin-right: -20px;}
+            input[type=text] {width: 50%; margin-left: 15px;}
+        }
+        .add {width: 100%; background-color: var(--m_color); color: var(--s_color_w); font-weight: bold; border: none; border-radius: 5px; padding: 20px 20px; margin: 20px 10px; font-size: 18px;}
+        div:last-child {width: 35%; margin: 0 auto;
+            input[type=submit] {margin-right: 10px;}
+            a {color: #fff !important; padding: 5px 40px;}
+        }
+    }
+}

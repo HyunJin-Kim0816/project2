@@ -1,0 +1,374 @@
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.top_content {
+  display: flex;
+}
+.top_content .mySwiper {
+  width: 60%;
+}
+.top_content .mySwiper .swiper-wrapper {
+  width: 100% !important;
+}
+.top_content .mySwiper .swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+.top_content .mySwiper .swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.8 !important;
+  width: 30px;
+  height: 10px;
+  border-radius: 0px;
+}
+.top_content .mySwiper .swiper-pagination-bullet-active {
+  background: var(--m_color) !important;
+  width: 40px !important;
+}
+.top_content .mySwiper a > img {
+  filter: brightness(0.96);
+  height: 58vh;
+}
+.top_content .travel_search {
+  width: 40%;
+}
+
+.best_travel, .popular_travel, .spring_travel, .korea_travel {
+  width: 1224px;
+  text-align: center;
+  margin: 60px auto;
+}
+.best_travel h2, .best_travel .sec_title, .popular_travel h2, .popular_travel .sec_title, .spring_travel h2, .spring_travel .sec_title, .korea_travel h2, .korea_travel .sec_title {
+  margin-bottom: 20px;
+}
+.best_travel .sub_title, .popular_travel .sub_title, .spring_travel .sub_title, .korea_travel .sub_title {
+  text-align: right;
+}
+.best_travel .sub_title a, .popular_travel .sub_title a, .spring_travel .sub_title a, .korea_travel .sub_title a {
+  color: var(--s_color_g2) !important;
+  text-decoration: underline !important;
+}
+.best_travel .t_list, .popular_travel .t_list, .spring_travel .t_list, .korea_travel .t_list {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+}
+.best_travel .list, .popular_travel .list, .spring_travel .list, .korea_travel .list {
+  display: flex;
+  width: 800px;
+}
+.best_travel .list .product_list, .popular_travel .list .product_list, .spring_travel .list .product_list, .korea_travel .list .product_list {
+  width: 200px;
+  margin-right: 150px;
+}
+.best_travel .list .product_list img, .popular_travel .list .product_list img, .spring_travel .list .product_list img, .korea_travel .list .product_list img {
+  border-radius: 10px;
+  width: 130%;
+  height: 20vh;
+}
+.best_travel .list .product_list .product_name, .best_travel .list .product_list .product_explain, .popular_travel .list .product_list .product_name, .popular_travel .list .product_list .product_explain, .spring_travel .list .product_list .product_name, .spring_travel .list .product_list .product_explain, .korea_travel .list .product_list .product_name, .korea_travel .list .product_list .product_explain {
+  text-align: left;
+  margin-top: 10px;
+  width: 250px;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.best_travel .list .product_list .product_name, .popular_travel .list .product_list .product_name, .spring_travel .list .product_list .product_name, .korea_travel .list .product_list .product_name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.best_travel .more, .popular_travel .more, .spring_travel .more, .korea_travel .more {
+  display: none;
+}
+
+.travel_search {
+  width: 100%;
+  background-color: #D8F5FF;
+}
+.travel_search h2, .travel_search div {
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: -20px;
+}
+.travel_search h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+.travel_search div span {
+  font-size: 24px;
+  color: var(--s_color_g2);
+  padding: 0px 10%;
+}
+.travel_search div span:first-child {
+  font-weight: bold;
+  color: var(--s_color_bk);
+}
+.travel_search .base_bar, .travel_search .select_bar {
+  height: 3px;
+  margin: 20px 0;
+}
+.travel_search .base_bar {
+  background-color: var(--s_color_w);
+  width: 420px;
+}
+.travel_search .select_bar {
+  background-color: var(--m_color);
+  width: 210px;
+  position: absolute;
+}
+.travel_search select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 5px 0 10px 0;
+}
+.travel_search input, .travel_search select {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 420px;
+}
+.travel_search select > option > img {
+  z-index: 100;
+}
+.travel_search input[type=submit] {
+  background-color: var(--s_color_b1);
+  color: var(--s_color_w);
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.popular_travel .product_list {
+  width: 350px !important;
+  border: 2px solid rgba(181, 181, 181, 0.411);
+  border-radius: 10px;
+  margin-right: 70px !important;
+  padding-bottom: 10px;
+}
+.popular_travel .product_list img {
+  width: 100% !important;
+}
+.popular_travel .product_list .product_explain, .popular_travel .product_list .product_name {
+  width: 320px !important;
+  padding-left: 10px;
+}
+
+.spring_travel .container {
+  margin: 0 auto;
+  width: 1224px;
+}
+.spring_travel .tabs {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.spring_travel .tabs li {
+  border: 1px solid var(--m_color2);
+  color: var(--m_color2);
+  height: 40px;
+  border-radius: 50px;
+  padding: 7px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.spring_travel .tabs .current {
+  background-color: var(--m_color2);
+  color: #fff;
+}
+.spring_travel .tab-content {
+  display: none;
+  margin-top: 100px;
+}
+.spring_travel .tab-content ul {
+  display: flex;
+  overflow: auto;
+  margin: 0 auto;
+}
+.spring_travel .tab-content ul li {
+  width: 170px;
+  margin-right: 120px;
+}
+.spring_travel .tab-content ul li .product_name, .spring_travel .tab-content ul li .product_explain {
+  width: 215px;
+}
+.spring_travel .tab-content.current {
+  display: inherit;
+}
+
+.middle_ad {
+  margin: 120px auto;
+  width: 1224px;
+}
+.middle_ad .random_banner a img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .best_travel, .popular_travel, .spring_travel, .korea_travel, .t_list {
+    width: 950px !important;
+  }
+  .middle_ad .swiper-slide a img {
+    width: 1000px !important;
+  }
+  .tabs {
+    flex-flow: row wrap;
+    width: 85%;
+    justify-content: center;
+  }
+  .tabs .tab-link {
+    width: 140px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mySwiper {
+    width: 100% !important;
+  }
+  .mySwiper .swiper-pagination {
+    bottom: 5px;
+  }
+  .mySwiper .swiper-slide > img {
+    width: 100% !important;
+    height: 40vh !important;
+  }
+  .top_content .mySwiper a > img {
+    height: 40vh !important;
+  }
+  .travel_search {
+    display: none !important;
+  }
+  .gnb {
+    display: block !important;
+    margin-top: 40px;
+    padding: 0 30px;
+  }
+  .gnb ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .gnb ul li {
+    width: calc((100% - 2rem) / 3);
+    box-sizing: border-box;
+  }
+  .gnb ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gnb ul li a img {
+    width: 80%;
+    height: 10vh;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .middle_ad {
+    display: none;
+  }
+  .best_travel, .popular_travel, .middle_ad, .spring_travel, .korea_travel {
+    width: 100%;
+    margin: 120px auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .best_travel h2, .popular_travel h2, .middle_ad h2, .spring_travel h2, .korea_travel h2 {
+    font-size: 30px;
+  }
+  .t_list {
+    margin-top: 10% !important;
+  }
+  .best_travel .sub_title {
+    display: none;
+  }
+  .best_travel .t_list {
+    width: 100%;
+    overflow: auto;
+  }
+  .best_travel .more {
+    display: block !important;
+    width: 380%;
+    height: 30%;
+    background-color: var(--m_color);
+    border-radius: 50%;
+    transform: translateY(80%);
+  }
+  .popular_travel .t_list {
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  .spring_travel {
+    padding: 0px;
+    overflow: hidden;
+    width: 470px;
+  }
+  .spring_travel .sub_title {
+    display: none;
+  }
+  .tabs {
+    width: 110%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .spring_travel .tab-link {
+    width: 97px;
+    height: 32px !important;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    padding: 7px 3px !important;
+  }
+  .spring_travel .container {
+    width: 100%;
+  }
+  .spring_travel .tab-content {
+    margin: 120px 0px !important;
+  }
+  .spring_travel .tab-content .more {
+    display: block !important;
+    width: 355%;
+    height: 27%;
+    background-color: var(--m_color);
+    border-radius: 50%;
+    transform: translateY(90%);
+  }
+  .korea_travel .t_list {
+    width: 100%;
+    overflow: auto;
+  }
+  .korea_travel .list .product_list {
+    width: 100%;
+    margin-right: 90px !important;
+    padding-right: 20px;
+  }
+  .korea_travel .product_name, .product_explain {
+    width: 95%;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}/*# sourceMappingURL=main.css.map */
